@@ -388,12 +388,13 @@ export default () => {
       if (gunApp) {
         gunApp.position.copy(app.position);
         gunApp.quaternion.copy(app.quaternion);
+         gunApp.updateMatrix();
       }
     } else {
       if (gunApp) {
         app.position.copy(gunApp.position);
         app.quaternion.copy(gunApp.quaternion);
-        app.updateMatrixWorld();
+        app.updateMatrix();
       }
     }
     
