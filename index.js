@@ -393,6 +393,7 @@ export default () => {
       if (gunApp) {
         app.position.copy(gunApp.position);
         app.quaternion.copy(gunApp.quaternion);
+        app.updateMatrixWorld();
       }
     }
     
